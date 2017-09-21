@@ -2,7 +2,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends Application
+class About extends My_Controller
 {
 
 	/**
@@ -19,7 +19,8 @@ class Welcome extends Application
 	 */
 	public function index()
 	{
-		$this->load->view("welcome");
+	    $data = array('content'=>'about');
+		$this->load->view($this->template, $data);
 	}
 
 }
