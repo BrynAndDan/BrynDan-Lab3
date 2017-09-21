@@ -2,7 +2,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Gallery extends My_Controller
+class Gallery extends Application
 {
 
 	/**
@@ -19,7 +19,7 @@ class Gallery extends My_Controller
 	 */
 	public function index()
 	{
-		$this->load->view($this->template,"gallery");
+        $this->load->view("gallery");
 	}
 
 }

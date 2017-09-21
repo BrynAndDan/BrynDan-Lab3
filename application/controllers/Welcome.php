@@ -2,9 +2,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-include (BASEPATH . '/controllers');
-
-class Welcome extends My_Controller
+class Welcome extends Application
 {
 
 	/**
@@ -21,7 +19,7 @@ class Welcome extends My_Controller
 	 */
 	public function index()
 	{
-		$this->load->view($this->template,"welcome");
+		$this->load->view("welcome");
 	}
 
 }
